@@ -1,7 +1,7 @@
-
-<details><summary>すごく長い文章とかプログラムとか</summary><div>
+<details><summary>コード</summary><div>
 
 ```python
-print('Hello world!')
-```　
+1 + 1
+```
+
 </div></details>
