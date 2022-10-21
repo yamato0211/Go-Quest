@@ -15,9 +15,10 @@ func main() {
 	//goでは、:=とすることで暗黙的に型宣言を行ってくれます。
 	r := gin.Default()
 
-	//さっき作ったInitDBを実行
+	//InitDBを実行
 	db.InitDB()
 
+	//InitRouterを実行
 	routers.InitRouter(r)
 
 	//GETメソッドを定義
