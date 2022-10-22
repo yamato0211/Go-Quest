@@ -101,6 +101,7 @@ dbディレクトリに中に**db.go**と**model.go**を作成します。
 model.goにはデータベースに使用するモデルを構造体で定義します。
 db.goにはデータベースに接続するためのあれこれを書いていきます。
 
+model.go
 ```model.go
 // db package
 package db
@@ -113,6 +114,7 @@ type Todo struct {
 }
 ```
 
+db.go
 ```db.go
 package db
 
@@ -194,6 +196,7 @@ Gormは初めてで難しいかもしれませんが、自分で考えて書く�
 
 [Gormドキュメント](https://gorm.io/ja_JP/docs/)
 
+cruds/todo.go
 ```todo.go
 package cruds
 
@@ -267,6 +270,7 @@ func DeleteTodo(id uint) (err error) {
 
 中に**todo.go**を作成しよう。
 
+schema/todo.go
 ```todo.go
 package schema
 
@@ -310,6 +314,7 @@ APIのurlのことをよく**エンドポイント**と言ったりしますが�
 
 プロジェクトディレクトリ直下に、**routersディレクトリ**を作成し、中に**main.go**を作成しよう。
 
+routers/main.go
 ```main.go
 package routers
 
@@ -351,6 +356,7 @@ func InitRouter(r *gin.Engine) {
 cors対策もできたところで、Lv.9で示したルーティングを書いていきましょう。
 routersディレクトリ内に**todo.go**を作成しよう。
 
+routers/todo.go
 ```todo.go
 package routers
 
