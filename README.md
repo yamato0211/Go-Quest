@@ -525,7 +525,7 @@ $ curl -X DELETE localhost:8000/todo/1
 Todoが削除されているはずです。
 
 ## Lv. 14 勝利
-ここまでくればもう大丈夫、これからはバックエンド要因として働いてもらいます。
+ここまでくればもう大丈夫、これからはバックエンド要員として働いてもらいます。
 ソースコードはGo-Questリポジトリのdevelopブランチを覗いてみてください。
 
 ## おまけ フロントを作ってみる。
@@ -533,6 +533,7 @@ Todoが削除されているはずです。
 React × TypeScriptで書きました。
 主要なファイルだけ載せときます。
 
+App.tsx
 ```App.tsx
 import './App.css';
 import { Todos } from './components/Todos';
@@ -551,6 +552,7 @@ function App() {
 export default App;
 ```
 
+components/Todos.tsx
 ```components/Todos.tsx
 import { useState, useEffect } from "react"
 import axios from "axios"
