@@ -101,7 +101,7 @@ dbディレクトリに中に**db.go**と**model.go**を作成します。
 model.goにはデータベースに使用するモデルを構造体で定義します。
 db.goにはデータベースに接続するためのあれこれを書いていきます。
 
-model.go
+db/model.go
 ```model.go
 // db package
 package db
@@ -114,7 +114,7 @@ type Todo struct {
 }
 ```
 
-db.go
+db/db.go
 ```db.go
 package db
 
